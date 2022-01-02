@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="card shadow mb-4">
+    <div class="card-body">
+    <table class="table table-striped">
+    <tr> <th>IdClient</th><th>IdDevis</th> <th>NomClient</th><th>TelClient</th><th>RibClient</th><th>TypeClient</th><th>chantier</th></tr>
+    <tbody *ngFor="let client of clients">
+    <tr >
+    <td>{{client.idClient}}</td>
+    <td>{{client.idDevis}}</td>
+    <td>{{client.nomClient}}</td>
+    <td>{{client.telClient}}</td>
+    <td>{{client.RibClient}}</td>
+    <td>{{client.typeClient}}</td>
+    <td>{{client.chantier.IdChantier}}</td>
+    <td><a class="btn btn-success" [routerLink]="['/updateClient',client.idClient]">Modifier</a></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+    

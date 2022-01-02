@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="card shadow mb-4">
+    <div class="card-body">
+    <table class="table table-striped">
+    <tr> <th>Id</th><th>Nom</th> <th>adresse</th></tr>
+    <tbody *ngFor="let chantier of chantiers">
+    <tr >
+    <td>{{chantier.IdChantier}}</td>
+    <td>{{chantier.nomChantier}}</td>
+    <td>{{chantier.adresse}}</td>
+    <td><a class="btn btn-success" [routerLink]="['/updateChantier',chantier.IdChantier]">Modifier</a></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+    

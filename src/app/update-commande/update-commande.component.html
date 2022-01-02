@@ -1,0 +1,43 @@
+
+<div class="container">
+    <div>
+    <h2>Modifier une commande :</h2>
+    </div>
+    <form >
+    <div   class="col-sm-2 col-md-2 col-lg-2">
+    <label >Num Commande</label>
+    <input readonly type="number" [(ngModel)]="currentCommande.numCommande"
+    name="idClient" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4" >
+    <label >date</label>
+    <input type="number"[(ngModel)]= "currentCommande.date"
+    name="date" class="form-control">
+    </div>
+ 
+    <div class="col-sm-2 col-md-2 col-lg-2">
+        <label > heureCollage </label>
+        <input type="text" [(ngModel)]= "currentCommande.heureCollage"
+        name="heureCollage" class="form-control">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+            <label >Quantité commande </label>
+            <input type="text" [(ngModel)]= "currentCommande.qteCommande"
+            name="qteCommande" class="form-control">
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <label >pompage </label>
+                <input type="text" [(ngModel)]= "currentCommande.pompage"
+                name="pompage" class="form-control">
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <label >client </label>
+                    <input type="text" [(ngModel)]= "currentCommande.client"
+                    name="client" class="form-control">
+                    </div>
+                    
+    <div class="mt-2">
+    <button type="submit" (click)="updateCommande()" class="btn btn-success">Modifer</button>
+    </div>
+    </form>
+    </div>

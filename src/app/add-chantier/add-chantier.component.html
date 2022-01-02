@@ -1,0 +1,25 @@
+<div class="container">
+    <div>
+    <h2>Ajouter un Chantier :</h2>
+    </div>
+    <form >
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >ID Chantier</label>
+        <input type="text" [(ngModel)]="newChantier.IdChantier"
+        name="IdChantier" class="form-control">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >Nom Chantier</label>
+        <input type="text"[(ngModel)]= "newChantier.nomChantier"
+        name="nomChantier" class="form-control">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >addresse</label>
+        <input type="text" [(ngModel)]= "newChantier.adresse"
+        name="adresse" class="form-control">
+        </div>
+        <div class="mt-2">
+        <button type="submit" (click)="addChantier()" class="btn btn-success">Ajouter</button>
+        </div>
+        </form>
+        </div>

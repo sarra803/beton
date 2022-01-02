@@ -1,0 +1,47 @@
+
+<div class="container">
+    <div>
+    <h2>Modifier un Client :</h2>
+    </div>
+    <form >
+    <div class="col-sm-2 col-md-2 col-lg-2">
+    <label >ID client</label>
+    <input  readonly type="number" [(ngModel)]="currentClient.idClient"
+    name="idClient" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4" >
+    <label >id  devis </label>
+    <input type="number"[(ngModel)]= "currentClient.idDevis"
+    name="idDevis" class="form-control">
+    </div>
+ 
+    <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >Nom  client </label>
+        <input type="text" [(ngModel)]= "currentClient.nomClient"
+        name="nomClient" class="form-control">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+            <label >tel  client </label>
+            <input type="text" [(ngModel)]= "currentClient.telClient"
+            name="telClient" class="form-control">
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <label >RIB  client </label>
+                <input type="text" [(ngModel)]= "currentClient.RibClient"
+                name="RibClient" class="form-control">
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <label >type   client </label>
+                    <input type="text" [(ngModel)]= "currentClient.typeClient"
+                    name="typeClient" class="form-control">
+                    </div>
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <label >  Chantier </label>
+                        <input type="text" [(ngModel)]= "currentClient.chantier"
+                        name="chantier" class="form-control">
+                        </div>
+    <div class="mt-2">
+    <button type="submit" (click)="updateClient()" class="btn btn-success">Modifer</button>
+    </div>
+    </form>
+    </div>

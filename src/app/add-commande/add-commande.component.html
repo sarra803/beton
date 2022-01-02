@@ -1,0 +1,41 @@
+<div class="container">
+    <div>
+    <h2>Ajouter une commande :</h2>
+    </div>
+    <form >
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >Num commande</label>
+        <input type="number" [(ngModel)]="newCommande.numCommande"
+        name="numCommande" class="form-control">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >date</label>
+        <input type="number"[(ngModel)]= "newCommande.date"
+        name="date" class="form-control">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >heure collage</label>
+        <input type="string" [(ngModel)]= "newCommande.heureCollage"
+        name="heureCollage" class="form-control">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+            <label > quantité</label>
+            <input type="string" [(ngModel)]= "newCommande.qteCommande"
+            name="qteCommande" class="form-control">
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <label >pompage </label>
+                <input type="string" [(ngModel)]= "newCommande.pompage"
+                name="pompage" class="form-control">
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <label >num Client </label>
+                    <input type="string" [(ngModel)]= "newCommande.client"
+                    name="client" class="form-control">
+                    </div>
+        <div class="mt-2">
+        <button type="submit" (click)="addCommande()" class="btn btn-success">Ajouter</button>
+        </div>
+        </form>
+        </div>
+
